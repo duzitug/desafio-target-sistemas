@@ -4,7 +4,7 @@ function fibonacci(n) {
   else return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-function isFibonacci(n) {
+function isFibonacciSequence(n) {
   for (let i = 1; i <= n; i++) {
     if (fibonacci(i) === n) return true;
   }
@@ -12,7 +12,7 @@ function isFibonacci(n) {
 }
 
 const numeroDigitado = parseInt(prompt("Digite um número: "));
-const isFibonacci = isFibonacci(numeroDigitado);
+const isFibonacci = isFibonacciSequence(numeroDigitado);
 
 if (isFibonacci)
   console.log(`${numeroDigitado} pertence à sequência de Fibonacci.`);
